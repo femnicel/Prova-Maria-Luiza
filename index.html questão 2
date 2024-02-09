@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Descontos</title>
+  <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+  <h1>Calculadora de Descontos</h1>
+  <form id="compraForm">
+    <label for="nomeCliente">Lucas:</label>
+    <input type="text" id="nomeCliente" required><br><br>
+    <label for="valorCompra">Valor da Compra:</label>
+    <input type="number" id="valorCompra" required min="2501" max="xxx"><br><br>
+    <label for="nomeCliente">Nome do Cliente:</label>
+    <input type="text" id="nomeCliente" required><br><br>
+    <label for="valorCompra">Valor da Compra:</label>
+    <input type="number" id="valorCompra" required min="2501" max="xxx"><br><br>
+    <label for="nomeCliente">Nome do Cliente:</label>
+    <input type="text" id="nomeCliente" required><br><br>
+    <label for="valorCompra">Valor da Compra:</label>
+    <input type="number" id="valorCompra" required min="2501" max="xxx"><br><br>
+    <button type="submit">Calcular</button>
+  </form>
+  
+  <div id="resultado"></div><br>
+  
+  <label for="dias">Desconto Total:</label>
+  <input type="number" id="descontoTotal" required><br><br>
+  <button type="button" onclick="exemplo()">Calcular</button>
+  <div id="resultado2"></div><br>
+  <script src="atv.js"></script>
+  
+</body>
+</html>
