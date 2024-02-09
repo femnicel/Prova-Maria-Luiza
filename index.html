@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Imposto sobre Carros</title>
+</head>
+<body>
+    <h1>Calculadora de Imposto sobre Carros</h1>
+    <label for="metodoPagamento">Selecione um dos métodos de pagamento:</label>
+    <select id="metodoPagamento">
+      <option value="financiamento">Financiamento</option>
+      <option value="consorcio">Consórcio</option>
+      <option value="BH-BSB">À vista</option>
+    </select>
+    <br>
+    <label for="imposto">Imposto sobre o valor do carro:</label>
+    <input type="number" id="imposto" >
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <div id="resultado"></div>
+  
+    <script src="script.js"></script>
+  </body>
+  </html>
