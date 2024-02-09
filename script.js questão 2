@@ -1,0 +1,45 @@
+// Função para aplicar desconto de 10% nas compras acima ou superior a R$ 3000
+function aplicarDesconto(valorTotal, valorDesconto) {
+    if (valorTotal === 2500) { // 2500 representa o valor da compra 
+        return valorTotal ; // Sem aplica desconto
+    } else if (valorTotal === 5250) { // 5250 representa o valor da compra
+        return valorTotal * 10; // Aplica desconto de 10%
+    } else if (valorTotal === 4150) { // 4150 representa o valor da compra
+        return valorTotal * 10; // Aplica desconto de 10%
+    }
+}
+
+document.getElementById('compraForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const nomeCliente = document.getElementById('nomeCliente').value;
+    const valorTotal = parseInt(document.getElementById('valorTotal').value);
+    const valorDesconto = parseFloat(document.getElementById('valorDesconto').value);
+
+    const valorTotal = (lucasDesconto * 0) + (leilaDesconto * 10) + (daviDesconto * 10);
+
+    const valorFinal = aplicarDesconto(valorTotal, valorDesconto);
+
+    document.getElementById('resultado').innerHTML = `<p>Cliente: ${nomeCliente}</p>
+                                                      <p>Valor Total da Compra: R$ ${valorFinal.toFixed(2)}</p>
+                                                      <p>Valor Total da Compra com desconto: R$ ${valorFinal.toFixed(2)}</p> `;
+});
+
+function exemplo() {
+    const valorFinal = document.getElementById('valorFinal').value;
+    let total = 1; // Fator de multiplicação do desconto, padrão sem desconto
+
+    if (valorTotal === '3000 && >3000') { // desconto de 10% nas compras acima ou superior a R$ 3000
+        total = 0.9; // Aplica desconto de 10%
+    }
+
+    const Lucas = 0;
+    const Leila = 10;
+    const Davi = 10;
+
+
+
+    document.getElementById('resultado2').innerHTML = `<p> Lucas gastou  2500 então não teve desconto  ${lucas * total}</p>
+                                                       <p> Leila gastou  5250 então teve 10% de desconto e pagou apenas:  4725,00 ${leila * total}</p>
+                                                       <p> Daniel gastou  4150 então teve 10% de desconto e pagou apenas:  4.145,85 ${daniel * total}</p>`;
+}
